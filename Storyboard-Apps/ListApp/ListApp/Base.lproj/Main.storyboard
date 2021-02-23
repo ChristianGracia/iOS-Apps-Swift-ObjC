@@ -33,7 +33,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Icon Dictionary" id="P3V-xu-5Qp"/>
                     <connections>
-                        <segue destination="ZpB-84-XrC" kind="show" id="pMy-1X-BDw"/>
+                        <segue destination="ZpB-84-XrC" kind="show" identifier="Definition" id="pMy-1X-BDw"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhS-aZ-p7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -43,7 +43,7 @@
         <!--View Controller-->
         <scene sceneID="iKx-ZF-QWz">
             <objects>
-                <viewController id="ZpB-84-XrC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Definition" id="ZpB-84-XrC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D6Q-ni-V2k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +64,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8VK-Vv-qwr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Definition"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fqD-hE-9Lj" secondAttribute="trailing" constant="20" id="WP3-xO-gmJ"/>
                             <constraint firstItem="fqD-hE-9Lj" firstAttribute="centerX" secondItem="D6Q-ni-V2k" secondAttribute="centerX" id="bKU-RE-7sM"/>
