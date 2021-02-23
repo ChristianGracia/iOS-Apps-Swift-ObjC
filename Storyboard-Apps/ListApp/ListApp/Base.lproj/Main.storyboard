@@ -31,7 +31,9 @@
                             <outlet property="delegate" destination="FL7-kf-0bP" id="s0j-Zu-HpS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Icon Dictionary" id="P3V-xu-5Qp"/>
+                    <navigationItem key="navigationItem" title="Icon Dictionary" id="P3V-xu-5Qp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7vP-qb-FUu"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="ZpB-84-XrC" kind="show" identifier="Definition" id="pMy-1X-BDw"/>
                     </connections>
@@ -40,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="iKx-ZF-QWz">
             <objects>
-                <viewController storyboardIdentifier="Definition" id="ZpB-84-XrC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Definition" id="ZpB-84-XrC" customClass="DefinitionViewController" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D6Q-ni-V2k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +76,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Hf-hv-xNL"/>
+                    <connections>
+                        <outlet property="iconDefinitionLabel" destination="fqD-hE-9Lj" id="hts-mU-zSR"/>
+                        <outlet property="iconLabel" destination="J6n-MK-nZW" id="yWy-pf-zPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9h-UR-hh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

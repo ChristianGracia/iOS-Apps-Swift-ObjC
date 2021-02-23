@@ -15,6 +15,7 @@
 		B6FBB18025E4ABCD00E11C00 /* ListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB17F25E4ABCD00E11C00 /* ListAppTests.swift */; };
 		B6FBB18B25E4ABCE00E11C00 /* ListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB18A25E4ABCE00E11C00 /* ListAppUITests.swift */; };
 		B6FBB1AF25E4ADB200E11C00 /* IconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB1AE25E4ADB200E11C00 /* IconTableViewController.swift */; };
+		B6FBB1B425E4BD6000E11C00 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB1B325E4BD6000E11C00 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B6FBB18A25E4ABCE00E11C00 /* ListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppUITests.swift; sourceTree = "<group>"; };
 		B6FBB18C25E4ABCE00E11C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6FBB1AE25E4ADB200E11C00 /* IconTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewController.swift; sourceTree = "<group>"; };
+		B6FBB1B325E4BD6000E11C00 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B6FBB17325E4ABCD00E11C00 /* LaunchScreen.storyboard */,
 				B6FBB17625E4ABCD00E11C00 /* Info.plist */,
 				B6FBB1AE25E4ADB200E11C00 /* IconTableViewController.swift */,
+				B6FBB1B325E4BD6000E11C00 /* DefinitionViewController.swift */,
 			);
 			path = ListApp;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FBB1AF25E4ADB200E11C00 /* IconTableViewController.swift in Sources */,
+				B6FBB1B425E4BD6000E11C00 /* DefinitionViewController.swift in Sources */,
 				B6FBB16925E4ABC900E11C00 /* AppDelegate.swift in Sources */,
 				B6FBB16B25E4ABC900E11C00 /* SceneDelegate.swift in Sources */,
 			);

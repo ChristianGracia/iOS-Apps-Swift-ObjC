@@ -9,7 +9,7 @@ import UIKit
 
 class IconTableViewController: UITableViewController {
     
-    let emojis = ["😀", "🎭", "🚗", "🎨", "🇵🇹", "🇪🇸"]
+    let icons = ["😀", "🎭", "🚗", "🎨", "🇵🇹", "🇪🇸"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class IconTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
-        return emojis.count
+        return icons.count
     }
 
 
@@ -27,13 +27,22 @@ class IconTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
 
         
-        cell.textLabel?.text = String(emojis[indexPath.row])
+        cell.textLabel?.text = String(icons[indexPath.row])
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "Definition", sender: nil)
+        let selectedIcon = icons[indexPath.row]
+        performSegue(withIdentifier: "Definition", sender: selectedIcon)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let definitionVC = segue.destination as! DefinitionViewController
+        
+        let selectedIcon = sender as! String
+        
+        definitionVC.icon = selectedIcon
     }
 
 }
